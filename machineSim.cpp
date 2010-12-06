@@ -148,10 +148,8 @@ int main()
 					break;
 			case 0x0e000000 : // pop
 					if (sp < STK_BASE) sp++;
-					else {
-						pc++;
-						printf("Nothing to Pop\n");
-					}
+					else printf("Nothing to Pop\n");
+					pc++;
           #if DEBUG
 						printf("Debug-> POP     stack: %d  acc: %d  address: %x  pc: %x  sp: %x\n",mem[sp],acc,address,pc,sp);
           #endif
