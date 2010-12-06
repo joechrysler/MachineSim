@@ -1,0 +1,6 @@
+Machine Simulator is a simple project built for my CS331 class at SVSU.
+
+It simulates...wait for it...a machine.  Specifically, in this case, an x86 assembler machine (at&t syntax of course).
+
+Most of this was written by Dr. Hansen, who has saved us all from the certain doom that was CS446 next semester. Yay Hansen!
+I added a few bits here and there to spruce it up in time for submission.
