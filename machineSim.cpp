@@ -53,7 +53,7 @@ int main()
           address = mem[pc] & 0x00ffffff;
           printf("%x\n",mem[address]);
           #if DEBUG
-						printf("Debug-> WRITE   stack: %d  acc: %d  address: %x  pc:%x  sp: %x\n",mem[sp],acc,address,pc,sp);
+						printf("Debug-> WRITE   stack: %d  acc: %d  address: %x  pc: %x  sp: %x\n",mem[sp],acc,address,pc,sp);
           #endif
           pc++;
           break;
@@ -77,7 +77,7 @@ int main()
           address = mem[pc] & 0x00ffffff;
           mem[address] = acc;
           #if DEBUG
-						printf("Debug-> STORE   stack: %d  acc: %d  address: %x  pc:%x  sp: %x\n",mem[sp],acc,address,pc,sp);
+						printf("Debug-> STORE   stack: %d  acc: %d  address: %x  pc: %x  sp: %x\n",mem[sp],acc,address,pc,sp);
           #endif
           pc++;
           break;
